@@ -82,7 +82,7 @@
   </head>
 
   <style>
-    #myDialogDetails {
+    #myDialogDetails1 {
       display: none;
       position: fixed;
       top: 50%;
@@ -94,27 +94,77 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       z-index: 1000;
     }
-    #closeButtonDetails {
+    #myDialogDetails2 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    #myDialogDetails3 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    #closeButtonDetails1 {
+      position: absolute;
+      top: 1px;
+      right: 1px;
+    }
+    #closeButtonDetails2 {
+      position: absolute;
+      top: 1px;
+      right: 1px;
+    }
+    #closeButtonDetails3 {
       position: absolute;
       top: 1px;
       right: 1px;
     }
     .custom-container {
-    padding-left: 125px; /* Adjust the left padding as needed */
-    padding-right: 125px; /* Adjust the right padding as needed */
-  }
+      padding-left: 125px; /* Adjust the left padding as needed */
+      padding-right: 125px; /* Adjust the right padding as needed */
+    }
   </style>
 
-  <script>
-    function openDialogdetails() {
-      var dialog = document.getElementById("myDialogDetails");
-      dialog.style.display = "block";
-    }
-    function closeDialogdetails() {
-      var dialog = document.getElementById("myDialogDetails");
-      dialog.style.display = "none";
-    }
-  </script>
+<script>
+  function openDialogdetails1() {
+    var dialog = document.getElementById("myDialogDetails1");
+    dialog.style.display = "block";
+  }
+  function openDialogdetails2() {
+    var dialog = document.getElementById("myDialogDetails2");
+    dialog.style.display = "block";
+  }
+  function openDialogdetails3() {
+    var dialog = document.getElementById("myDialogDetails3");
+    dialog.style.display = "block";
+  }
+  function closeDialogdetails1() {
+    var dialog = document.getElementById("myDialogDetails1");
+    dialog.style.display = "none";
+  }
+  function closeDialogdetails2() {
+    var dialog = document.getElementById("myDialogDetails2");
+    dialog.style.display = "none";
+  }
+  function closeDialogdetails3() {
+    var dialog = document.getElementById("myDialogDetails3");
+    dialog.style.display = "none";
+  }
+</script>
 
   <body>
     <!-- Loader -->
@@ -645,96 +695,182 @@
     </section>
     <!-- END project -->
     <div class="custom-container">
-    <div class="container-fluid padding px-40 py-40">
-      <div class="row padding">
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="img/team1.png" />
-            <div>
-              <h4 class="card-body">John Dec</h4>
-              <p class="card-text">
-                Harry Potter is a British-American film series based on the
-                eponymous novels by author J. K. Rowling. The series is
-                distributed by Warner Bros. and consists of eight fantasy films,
-                beginning with Harry Potter and the Philosopher's Stone (2001)
-                and culminating with Harry Potter and the Deathly Hallows – Part
-                2 (2019)
-              </p>
-              <a
-                href="#"
-                class="btn btn-outline-secondary"
-                onclick="openDialogdetails()"
-                >See Profile</a
-              >
+      <div class="container-fluid padding px-40 py-40">
+        <div class="row padding">
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="img/team1.jpg" />
+              <div>
+                <h4 class="card-body">IcubesWire Pvt Limited</h4>
+                <p class="card-text">Designation: Software Engineer</p>
+                <p class="card-text">Duration: June 12th 2023 to Present</p>
+                <p class="card-text">Location: Gurgaon, Hariyana</p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary"
+                  onclick="openDialogdetails1()"
+                  >See Profile</a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="img/team2.png" />
-            <div>
-              <h4 class="card-body">Mary Jo</h4>
-              <p class="card-text">
-                Harry Potter is a British-American film series based on the
-                eponymous novels by author J. K. Rowling. The series is
-                distributed by Warner Bros. and consists of eight fantasy films,
-                beginning with Harry Potter and the Philosopher's Stone (2001)
-                and culminating with Harry Potter and the Deathly Hallows – Part
-                2 (2019)
+
+          <div id="myDialogDetails1">
+            <button
+              id="closeButtonDetails1"
+              class="btn"
+              onclick="closeDialogdetails1()"
+            >
+              X
+            </button>
+            <div class="service-content">
+              <h3>Unified App-Website</h3>
+              <p>
+                Technology: React JS, Redux , Typescript and Vue 3 Composition
+                API
               </p>
-              <a
-                href="#"
-                class="btn btn-outline-secondary"
-                onclick="openDialogdetails()"
-                >See Profile</a
-              >
+              <div class="s-line"></div>
+              <p>
+                • Developed a Responsive, user friendly interface for user
+                authentication using React.js, Redux for state management, React
+                Router for routing to create a dynamic and seamless user
+                experience.
+              </p>
+              <p>
+                • Designed & developed Dashboard for Influencer, Advertiser and
+                Affiliate using Vue 3 composition API.
+              </p>
+              <p>
+                • Delivered the end to end RCA tool features. Optimized the
+                current system architecture reduced AWS cost by 60%.
+              </p>
+              <p>
+                • Improved logging code using 00Ps by 80% and handled the
+                Components with scaling problems.
+              </p>
+              <p>
+                • Added code splitting for better app performance which
+                decreased load time by 20%, Pinia for state management.
+              </p>
+              <p>
+                • Worked on Real-Time chat using Firebase Realtime Database.
+              </p>
             </div>
           </div>
-        </div>
 
-        <div id="myDialogDetails">
-          <button
-            id="closeButtonDetails"
-            class="btn"
-            onclick="closeDialogdetails()"
-          >
-            X
-          </button>
-          <div class="service-content">
-            <h3>Apartment Visitor Menagement System</h3>
-            <p>Technology: HTML, PHP, MySQL</p>
-            <div class="s-line"></div>
-            <p>
-              A Web application that take Attendance of Apartment Visitor. We
-              can find Visitor by name, mobile no,visite date,etc..
-            </p>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="img/team3.jpg" />
+              <div>
+                <h4 class="card-body">Tech Mahindra Pvt. Limited</h4>
+                <p class="card-text">Designation: Software Engineer</p>
+                <p class="card-text">
+                  Duration: July 15th 2021 to June 5th 2023
+                </p>
+                <p class="card-text">Location: Noida, UP</p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary"
+                  onclick="openDialogdetails2()"
+                  >See Profile</a
+                >
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="img/team3.png" />
-            <div>
-              <h4 class="card-body">Phil Ho</h4>
-              <p class="card-text">
-                Harry Potter is a British-American film series based on the
-                eponymous novels by author J. K. Rowling. The series is
-                distributed by Warner Bros. and consists of eight fantasy films,
-                beginning with Harry Potter and the Philosopher's Stone (2001)
-                and culminating with Harry Potter and the Deathly Hallows – Part
-                2 (2019)
+          <div id="myDialogDetails2">
+            <button
+              id="closeButtonDetails2"
+              class="btn"
+              onclick="closeDialogdetails2()"
+            >
+              X
+            </button>
+            <div class="service-content">
+              <h3>Trugreen</h3>
+              <p>
+                Technology: JavaScript , React JS, Redux , Node JS, MongoDB and
+                Drupal
               </p>
-              <a
-                href="#"
-                class="btn btn-outline-secondary"
-                onclick="openDialogdetails()"
-                >See Profile</a
-              >
+              <div class="s-line"></div>
+              <p>
+                • TruGreen is a website for helping customers to provide all
+                facilities related to Lawn areas.
+              </p>
+              <p>• Integrating Apple Pay using Stripe Payment Gateway.</p>
+              <p>
+                • Implemented DeBounce concept to optimizing the existing system
+                codebase by 25%.
+              </p>
+              <p>
+                • Deploying the change request once the issue got fixed at
+                Testing Environment.
+              </p>
+              <p>
+                • Optimized existing codebase for improved performance and
+                scalability across multiple platforms.
+              </p>
+            </div>
+            <div class="service-content">
+              <h3>ADL-OWS-DEV</h3>
+              <p>Technology: Core Java, MySQL, Mainframe, Scripting Tool</p>
+              <div class="s-line"></div>
+              <p>
+                • Integrated applications in AT&T's networking domain for
+                client, AT&T Inc.
+              </p>
+              <p>• Running script and resolving error using Mainframe</p>
+              <p>
+                • Analyzed business and functional requirements to optimize
+                application loads through design patterns and Data Structures.
+              </p>
+              <p>
+                • Followed the Test Driven Development (TDD) approach and
+                covered more than 80% of corner cases.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border">
+              <img class="card-img-top" src="img/team2.png" />
+              <div>
+                <h4 class="card-body">Image InfoSystem Pvt. Limited</h4>
+                <p class="card-text">Designation: Software Programmer</p>
+                <p class="card-text">Duration: Oct 2nd 2020 to July 1st 2021</p>
+                <p class="card-text">Location: Delhi</p>
+                <a
+                  href="#"
+                  class="btn btn-outline-secondary"
+                  onclick="openDialogdetails3()"
+                  >See Profile</a
+                >
+              </div>
+            </div>
+          </div>
+          <div id="myDialogDetails3">
+            <button
+              id="closeButtonDetails3"
+              class="btn"
+              onclick="closeDialogdetails3()"
+            >
+              X
+            </button>
+            <div class="service-content">
+              <h3>Apna Farm</h3>
+              <p>
+                Technology: React JS, Redux, Node JS, MongoDB, Typescript,
+                JavaScript
+              </p>
+              <div class="s-line"></div>
+              <p>• Design and developed a Responsive React.js web app that allows users to search movies using a Search Bar. </p>
+              <p>• Optimized existing codebase for improved performance and scalability across multiple platforms.</p>
+              <p>• Handling code review, creating pull requests, and code merging Deploying the code to different environments. Tracking Bugs using Jira
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
 
     <!-- CONTACT -->
