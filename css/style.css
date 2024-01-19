@@ -371,9 +371,9 @@ img {
 }
 
 .avatar-hero img {
-  width: 130px;
+  width: 150px;
   margin: 0 auto;
-  border: solid 3px #dfdfdf;
+  border: solid 2px #dfdfdf;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
